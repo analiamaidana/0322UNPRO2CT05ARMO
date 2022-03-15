@@ -1,0 +1,11 @@
+{
+  "name": "ejemplomodulopropio",
+  "version": "1.0.0",
+  "description": "Ejemplo en clase de módulo propio",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sebastián Rellihan",
+  "license": "ISC"
+}
