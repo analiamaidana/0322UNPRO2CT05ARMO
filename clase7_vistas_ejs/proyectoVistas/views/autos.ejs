@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head', {title: 'Listado de autos'}) %> 
+<body>
+    <h1 class="listado-autos-h1">Listado de autos</h1>
+
+    <a href="/">Volver al index</a>
+
+    <ul>
+        <% for(let i = 0; i < listadoAutos.length; i++) { %>
+            <li> <%= `${listadoAutos[i].marca} ${listadoAutos[i].modelo}` %> </li>
+        <% } %>
+    </ul>
+</body>
+</html>
