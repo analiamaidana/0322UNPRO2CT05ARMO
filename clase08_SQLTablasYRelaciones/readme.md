@@ -1,0 +1,1 @@
+Usamos SQL y Workbench para crear una base de datos, sus tablas y relaciones.
