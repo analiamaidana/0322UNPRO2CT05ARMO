@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Udesa Movies</h1>
+    <p>Lista de películas</p>
+    <ul>
+      <% for(let i=0; i<movies.length; i++) {%>
+        <li> <a href="/movie/<%= movies[i].id %>"> <%= movies[i].title %></a></li>  
+      <% } %> 
+    </ul>
+  </body>
+</html>
