@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Udesa Movies</h1>
+    <h3>Menu</h3>
+    <% if(locals.user){ %>
+        <p>Hola <%= user.email%> </p>
+      <% } else {%>
+        <p>No estás logueado</p>
+      <% }%>
+    <nav>
+      <ul>
+        <li><a href="/users/register">Registrate</a></li>
+      </ul>
+    </nav>
+    <p>Lista de películas</p>
+    <ul>
+      <% for(let i=0; i<movies.length; i++) {%>
+        <li> <a href="/movie/<%= movies[i].id %>"> <%= movies[i].title %></a></li>  
+      <% } %> 
+    </ul>
+  </body>
+</html>
