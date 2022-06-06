@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Udesa Movies</h1>
+    <p>Registro</p>
+    <form action="/users/store" method="POST" enctype="multipart/form-data">
+      <div>
+        <input type="text" name="email" value="" placeholder="email">
+      </div>
+      <div>
+        <input type="password" name="password" value="" placeholder="contraseña">
+      </div>
+      <div>
+        <input type="file" name="avatar" value="">
+      </div>
+      <button type="submit">Registrarme</button>
+    </form>
+  </body>
+</html>

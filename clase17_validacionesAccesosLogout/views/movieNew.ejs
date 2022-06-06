@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Udesa Movies</h1>
+    <p>Cargar nueva peli</p>
+    <form action="/movies/store" method="POST">
+      <div><input type="text" name="title" value="" placeholder="título"></div>
+      <div><input type="text" name="rating" value="" placeholder="rating"></div>
+      <div><input type="text" name="awards" value="" placeholder="Premios"></div>
+      <div><input type="text" name="release_date" value="" placeholder="fecha de estreno"></div>
+      <div><input type="text" name="length" value="" placeholder="duración"></div>
+      <div>
+        <select name="genre_id">
+          <% for(let i=0; i<generos.length; i++ ){%>
+            <option value="<%= generos[i].id %>"> <%= generos[i].name %> </option>
+          <% } %> 
+        </select>  
+      </div>
+      <button type="submit">Guardar película</button>
+    </form>
+  </body>
+</html>
